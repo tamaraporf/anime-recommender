@@ -1,7 +1,26 @@
-from langchain.prompts import PromptTemplate
+"""Módulo que define o prompt base para recomendações de anime.
+
+Este arquivo centraliza a construção do template usado pelo LangChain
+para gerar respostas consistentes e bem estruturadas, garantindo que o
+modelo retorne exatamente três recomendações com justificativas claras.
+"""
+
+from langchain_core.prompts import PromptTemplate
 
 
 def get_anime_prompt():
+    """Cria e retorna o template de prompt para o recomendador de animes.
+
+    O template instrui o modelo a:
+    - usar o contexto recuperado,
+    - responder de forma detalhada,
+    - sugerir exatamente três títulos,
+    - explicar o porquê de cada recomendação,
+    - ser honesto quando não souber.
+
+    Returns:
+        PromptTemplate: Template do LangChain com variáveis de entrada.
+    """
     template = """
 You are an expert anime recommender. Your job is to help users find the perfect anime based on their preferences.
 
