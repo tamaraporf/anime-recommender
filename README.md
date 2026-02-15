@@ -60,7 +60,7 @@ sequenceDiagram
 
 ## Estrutura do Projeto
 
-```
+```text
 app/
   app.py                 # Interface Streamlit
 config/
