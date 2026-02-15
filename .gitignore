@@ -32,3 +32,9 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+#LOGS
+logs/
+*.log   
+
+ANIME_RECOMMENDER.egg-info/
